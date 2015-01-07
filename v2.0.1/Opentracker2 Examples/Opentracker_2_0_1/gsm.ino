@@ -382,7 +382,7 @@
           delay(4000);  //might take sometime to open socket
           gsm_get_reply();
           
-          char *tmp = strstr(modem_reply, "CONNECT OK");      
+          char *tmp = strstr(modem_reply, "CONNECT");      
           if(tmp!=NULL)
             {           
                 debug_print(F("Connected to remote server: "));
